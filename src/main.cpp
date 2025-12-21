@@ -1,19 +1,26 @@
-#include <raylib.h>
+#include "spaceship.hpp"
 
-int main() 
+int main()
 {
-    
-    InitWindow(800, 600, "Window Name");
-    SetTargetFPS(60);
-    
+    InitWindow(1080, 720, "Window Name");
+    SetWindowState(FLAG_VSYNC_HINT);
+
+    Ship ship(500, KEY_A, KEY_D, KEY_SPACE);
+    ship.loadTextures();
+
     while (!WindowShouldClose())
     {
-        
         BeginDrawing();
-            ClearBackground(WHITE);
-            //Start drawing in this area
+        ClearBackground(BLACK);
+
+        DrawTexture(ship.texture, (int)ship.position.x, (int)ship.position.y, WHITE);
+
         EndDrawing();
+
+        //Actions
+        ship.update();
     }
-    
+
+    UnloadTexture(ship.texture);
     CloseWindow();
 }

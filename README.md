@@ -4,7 +4,7 @@
 This project combines a C++ space shooter built with raylib and a Python-based computer vision controller. The Python program uses MediaPipe to detect hand position and gestures through a webcam, then uses PyAutoGUI to translate those gestures into keyboard inputs for the game.
 A simple **2D space shooter** built with **C++ and raylib**, controlled using **hand gestures through a webcam**. 
 #### ***The core idea is to make the game playable without keyboard***
-## 📸 Screenshots
+## 📸 Screenshot
 ![Gameplay](Gameplay/gameplay.png)
 
 The project has two parts:

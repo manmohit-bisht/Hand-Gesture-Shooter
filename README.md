@@ -5,7 +5,7 @@ This project combines a C++ space shooter built with raylib and a Python-based c
 A simple **2D space shooter** built with **C++ and raylib**, controlled using **hand gestures through a webcam**. 
 #### ***The core idea is to make the game playable without keyboard***
 ## 📸 Screenshot
-![Gameplay](Gameplay/gameplay.png)
+![Gameplay](gameplay/gameplay.png)
 
 The project has two parts:
 
